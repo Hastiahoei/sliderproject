@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Arima:wght@200;400;500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arima', cursive;
+}
+
+img{
+    display: block;
+}
+
+.wrapper{
+    max-width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+header{
+	position: relative;
+    
+}
+
+header .slideContainer {
+	height: 600px;
+    min-width :700px;;
+    border-radius: 5px solid black;
+}
+
+.slideContainer img {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	left: 0;
+	top: 0;
+	transform: scaleX(1);
+	opacity: 0;
+	transition: all 0.5s ease-in-out 0.2s;
+    
+}
+
+.slideContainer img.active {
+	transform: scaleX(1);
+	opacity: 1;
+}
+
+#left, #right {	
+	position: absolute;
+	top: 50%;	
+	transform: translateY(-50%);
+	z-index: 999;
+	font-size: 45px;
+	display: inline-block;
+	cursor: pointer;
+	width: 80px;
+	height: 70px;
+	text-align: center;
+	line-height:80px;
+	border-radius: 50%;
+	transition: all 0.5s ease-in-out;
+    color: rgb(224, 224, 224);
+}
+
+#left{
+	left: 2%;
+}
+
+#right{
+	right: 2%;
+}
+
+#left:hover, #right:hover {
+	/*background-color: rgba(90, 87, 87, 0.5);
+	color:rgb(233, 221, 221);
+	border-color: rgb(233, 221, 221);*/
+    /*color: white;
+    box-shadow: inset 0 -100px 0 0 #807d8a;*/
+    color: #82ffc9;
+    box-shadow: inset 0 0 10px rgba(27, 253, 156, 0.6), 0 0 9px 3px rgba(27, 253, 156, 0.2);
+} 
+
+.btns {
+	display: flex;
+	justify-content: center;
+	padding: 10px;
+    
+   }
+   
+#stopAuto, #startAuto{
+	margin: 10px;
+	padding: 1px 20px;
+	font-size: 15px;
+    color:#222327;
+}
+
+.m1{
+    display: block;
+    max-width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    column-count: 3;
+    column-width: 200px;
+    column-rule: 5px solid #4E494F;
+    column-gap: 2rem;
+
+}
+
+#back-top{
+	position: fixed;
+	right: 1rem;
+	bottom: 1rem;
+}
+
+#back-top a {
+	background:#2E2A29;
+	color: white;
+	text-decoration: none;
+	display: block;
+	width: 3.5rem;
+    line-height: 3.5rem;
+	border-radius: 50%;
+	text-align: center;
+	scroll-behavior: smooth;
+}
+
+    
+footer{
+    display: block;
+    background-color:#2E2A29 ;
+    height: 100px;
+    text-align: center;
+    max-width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5%;
+    padding-top: 3%;
+    color: white;
+}
+
+
